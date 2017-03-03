@@ -18,8 +18,10 @@ var bindEvent = function(element, eventName, callback){
 }
 
 
-var toggClass = function(element, className){
+var toggleClass = function(element, className) {
     if (element.classList.contains(className)) {
-        
+        element.classList.remove(className)
+    } else {
+        element.classList.add(className)
     }
 }
