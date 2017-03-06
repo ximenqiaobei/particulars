@@ -25,15 +25,3 @@ var toggleClass = function(element, className) {
         element.classList.add(className)
     }
 }
-
-var bindAll = function(selector, eventName, callback){
-    var elements = document.querySelectorAll(selector)
-    for (var i = 0; i < elements.length; i++) {
-        var e = elements[i]
-        bindEvent(e, eventName, callback)
-    }
-}
-
-var find = function(element, selector){
-    return element.querySelector(selector)
-}
